@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Quiz</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+        <div id="home" class="flex-center flex-column">
+            <h1>Quick Quiz</h1>
+            <a class="btn" href="/game.html">Play</a>
+            <a class="btn" href="/highScores.html">High Scores</a>
+
+        </div>
+    </div>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyC8iJUbAARBAXLc043Cao9QYGRkM_PGU7g",
+          authDomain: "quickquiz-d7403.firebaseapp.com",
+          projectId: "quickquiz-d7403",
+          storageBucket: "quickquiz-d7403.appspot.com",
+          messagingSenderId: "896049086185",
+          appId: "1:896049086185:web:56e8860aeda6fde1b93a78",
+          measurementId: "G-C8ZY3RZFMC"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>
